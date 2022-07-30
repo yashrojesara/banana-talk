@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import BananaComponent from "./Component/BananaComponent";
+import Footer from "./Component/Footer";
+import Header from "./Component/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        height: "100%",
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        position: "absolute",
+      }}
+    >
+      <Header />
+      <BananaComponent />
+      <Footer />
     </div>
   );
 }
